@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Service Portal</title>
+  <link rel="stylesheet" href="css task.css">
+</head>
+<body>
+
+  <header>
+    <h1>Student Service Portal</h1>
+    <p>Transcripts • ID Cards • General Inquiries</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <!-- Services Description -->
+    <section class="services">
+      <h2>Available Services</h2>
+      <div class="service-grid">
+        <div class="card"><strong> Transcripts</strong><p>Official & unofficial transcripts</p></div>
+        <div class="card"><strong> ID Cards</strong><p>Lost, damaged, or expired</p></div>
+        <div class="card"><strong> Inquiries</strong><p>Enrollment, fees, schedules</p></div>
+      </div>
+    </section>
+
+    <!-- Request Form -->
+    <section class="form-section">
+      <h2>Submit Request</h2>
+      <form>
+        <input type="text" placeholder="Student Name *" required>
+        <input type="text" placeholder="Student ID * (max 10)" maxlength="10" required>
+        <input type="email" placeholder="Email *" required>
+        
+        <select>
+          <option>Transcript Request</option>
+          <option>ID Card Issue</option>
+          <option>General Inquiry</option>
+          <option>Other</option>
+        </select>
+
+        <div class="radio-group">
+          <label><input type="radio" name="urgency" checked> Low</label>
+          <label><input type="radio" name="urgency"> Medium</label>
+          <label><input type="radio" name="urgency"> High</label>
+        </div>
+
+        <textarea rows="3" placeholder="Additional details..."></textarea>
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 University Student Affairs</p>
+  </footer>
+
+</body>
+</html>
